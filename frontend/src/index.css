@@ -1,0 +1,417 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+form {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px -10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.button-group {
+  display: flex; 
+  justify-content: space-between; 
+  gap: 10px; 
+}
+
+.register-button {
+background-color: #28a745;
+}
+
+.login-button:hover {
+background-color: #0056b3;
+}
+
+.register-button:hover {
+background-color: #218838;
+}
+
+
+.notification {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bought-notification {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.alert-notification {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout-container {
+  margin-top: auto; /* Push the button to the bottom */
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+
+.item-page {
+  display: flex;
+}
+
+.left-column {
+  width: 20%;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  position: sticky; /* Makes it stick while scrolling */
+  top: 0; /* Stick to the top of the viewport */
+  height: 100vh; /* Ensure it spans the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Base Button Styles */
+.left-column nav button {
+  width: 100%; 
+  margin: 0.5rem 0; 
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f4f4f4; 
+  color: #333; 
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Active Button */
+.left-column nav button.active {
+  background-color: #007bff; 
+  color: white;
+  border: 1px solid #0056b3;
+}
+
+/* Hover Effect */
+.left-column nav button:hover {
+  background-color: #e0e0e0; 
+  color: #000; 
+  transform: scale(1.03); 
+}
+
+/* Hover Effect for Active Button */
+.left-column nav button.active:hover {
+  background-color: #0056b3; 
+  color: #fff; 
+  transform: scale(1.05); 
+}
+
+/* Focused Button (Optional for accessibility) */
+.left-column nav button:focus {
+  outline: 2px solid #007bff; 
+}
+
+.right-column {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%; 
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 18rem;
+  max-height: 30rem;
+}
+
+.item-card h2 {
+  font-size: 1.1rem;
+  margin: 0.3rem 1rem; 
+  line-height: 1.3rem; 
+  text-align: left;
+}
+
+.item-card p {
+  font-size: 0.9rem;
+  margin: 0.3rem 1rem; 
+  line-height: 1.4; 
+  text-align: left;
+}
+
+.item-image {
+  /* width: 8rem; */
+  height: 13rem;
+  object-fit: scale-down; 
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+/* Shared Button Styles */
+.item-actions button {
+  width: 100%; 
+  margin: 0.35rem 0; 
+  padding: 0.52rem;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+  background-color: #f4f4f4; 
+  color: #333; 
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s; 
+}
+
+/* "Add to Cart" Button */
+.item-actions button:first-child:hover {
+  background-color: #1e7e34; 
+  color: #fff;
+  transform: scale(1.05); 
+}
+/* Hover Effect */
+.item-actions button:first-child {
+  background-color: #28a745; 
+  color: white;
+  border: 1px solid #1e7e34;
+}
+/* "Buy Now" Button */
+.item-actions button:last-child {
+  background-color: #007bff; 
+  color: white;
+  border: 1px solid #0056b3;
+}
+/* Hover Effect */
+.item-actions button:last-child:hover {
+  background-color: #0056b3; 
+  color: #fff;
+  transform: scale(1.05); 
+}
+
+
+.proceed-floating {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  padding: 1rem;
+  background-color: #f4f4f4;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.6); 
+  background-color: rgba(244, 244, 244, 1.0);
+  display: flex;
+  justify-content: center;
+  /* pointer-events: none; */
+}
+
+.proceed-button {
+  pointer-events: auto;
+  width: 100%; 
+  max-width: 400px; 
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #28a745; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.proceed-button:hover {
+  background-color: #218838; 
+  transform: scale(1.03); 
+}
+
+.proceed-button:focus {
+  outline: 2px solid #007bff; 
+}
+
+.proceed-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Confirmation dialog overlay */
+.confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Confirmation dialog box */
+.confirmation-dialog {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.confirmation-dialog h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.confirmation-dialog button {
+  margin: 10px 5px;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.confirmation-dialog button.confirm {
+  background-color: #007bff;
+  color: white;
+}
+
+.confirmation-dialog button.confirm:hover {
+  background-color: #0056b3;
+}
+
+.confirmation-dialog button.cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.confirmation-dialog button.cancel:hover {
+  background-color: #c82333;
+}
+
+.webcam-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.webcam-feed {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.captured-image {
+  margin-top: 10px;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  border: 2px solid #4CAF50;
+}
+
+.spinner {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

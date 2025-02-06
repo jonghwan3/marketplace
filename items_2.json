@@ -1,0 +1,88 @@
+{
+    "query": "mutation createItems($items: [ItemInput!]!) { createItems(items: $items) { id class size color price status picture} }",
+    "variables": {
+      "items": [
+        {
+          "class": "Smartphone",
+          "size": "6.5 inches",
+          "color": "Midnight Black",
+          "price": "$899.99",
+          "status": "Best",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738304110/smartphone_ybmnoz.webp"
+        },
+        {
+          "class": "Tablet",
+          "size": "11 inches",
+          "color": "Silver",
+          "price": "$599.00",
+          "status": "Good",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738304114/tablet_silver_fa3suy.avif"
+        },
+        {
+          "class": "Gaming Console",
+          "size": "Standard",
+          "color": "White",
+          "price": "$499.99",
+          "status": "Best",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738304104/gaming_console_qhlbet.jpg"
+        },
+        {
+          "class": "E-Reader",
+          "size": "7 inches",
+          "color": "Graphite",
+          "price": "$129.99",
+          "status": "Okay",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738304103/e_reader_hojyxf.webp"
+        },
+        {
+          "class": "Wireless Headphones",
+          "size": "Over-Ear",
+          "color": "Matte Black",
+          "price": "$249.99",
+          "status": "Best",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738304115/wireless_headphones_z3rwj9.jpg"
+        },
+        {
+          "class": "Smartwatch",
+          "size": "42mm",
+          "color": "Rose Gold",
+          "price": "$349.99",
+          "status": "Good",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738304112/smartwatch_re3h2u.webp"
+        },
+        {
+          "class": "Laptop",
+          "size": "14 inches",
+          "color": "Space Gray",
+          "price": "$1,499.99",
+          "status": "Best",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738304107/labtop_ff9gae.jpg"
+        },
+        {
+          "class": "External Hard Drive",
+          "size": "2TB",
+          "color": "Black",
+          "price": "$99.99",
+          "status": "Okay",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738304106/hard_drive_o2vfmx.avif"
+        },
+        {
+          "class": "Wireless Keyboard",
+          "size": "Full Size",
+          "color": "White",
+          "price": "$79.99",
+          "status": "Good",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738304117/wireless_keyboard_xnnmrb.avif"
+        },
+        {
+          "class": "Mechanical Keyboard",
+          "size": "Tenkeyless",
+          "color": "RGB",
+          "price": "$129.99",
+          "status": "Best",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738304109/meachincal_keyboard_psfkxx.jpg"
+        }
+      ]
+    }
+  }
+  

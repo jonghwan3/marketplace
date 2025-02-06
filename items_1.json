@@ -1,0 +1,89 @@
+{
+    "query": "mutation createItems($items: [ItemInput!]!) { createItems(items: $items) { id class size color price status picture} }",
+    "variables": {
+      "items": [
+        {
+          "class": "iPad",
+          "size": "10.2 inches",
+          "color": "Space Gray",
+          "price": "$329.99",
+          "status": "Best",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738302503/ipad_txkc23.webp"
+        },
+        {
+          "class": "Sofa",
+          "size": "3-Seater",
+          "color": "Navy Blue",
+          "price": "$799.00",
+          "status": "Good",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738302506/sofa_navy_blue_wmssvy.jpg"
+
+        },
+        {
+          "class": "Sneakers",
+          "size": "10 US",
+          "color": "White",
+          "price": "$120.50",
+          "status": "Okay",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738302505/sneakers_j3uvr0.webp"
+        },
+        {
+          "class": "Smart TV",
+          "size": "55 inches",
+          "color": "Black",
+          "price": "$699.99",
+          "status": "Best",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738302504/smartTv_mbtfi1.avif"
+        },
+        {
+          "class": "Backpack",
+          "size": "Medium",
+          "color": "Gray",
+          "price": "$49.99",
+          "status": "Good",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738302498/backpack_zecuvq.avif"
+        },
+        {
+          "class": "Gaming Laptop",
+          "size": "15.6 inches",
+          "color": "Black",
+          "price": "$1,299.99",
+          "status": "Best",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738302502/gaming_laptop_bp39ql.jpg"
+        },
+        {
+          "class": "Office Chair",
+          "size": "Ergonomic",
+          "color": "Black",
+          "price": "$250.00",
+          "status": "Good",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738302501/ergonomic_chair_favmio.png"
+        },
+        {
+          "class": "Bluetooth Speaker",
+          "size": "Compact",
+          "color": "Blue",
+          "price": "$99.99",
+          "status": "Okay",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738302498/bluetooth_speaker_mvqao4.webp"
+        },
+        {
+          "class": "Winter Jacket",
+          "size": "Large",
+          "color": "Olive Green",
+          "price": "$199.99",
+          "status": "Best",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738302508/winter_jacket_ehbjo2.jpg"
+        },
+        {
+          "class": "Coffee Maker",
+          "size": "12-Cup",
+          "color": "Silver",
+          "price": "$89.99",
+          "status": "Bad",
+          "picture": "https://res.cloudinary.com/dqhfjkj3p/image/upload/v1738302499/coffee_maker_kxiaaz.avif"
+        }
+      ]
+    }
+  }
+  
