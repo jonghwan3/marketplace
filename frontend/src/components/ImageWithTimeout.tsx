@@ -10,14 +10,14 @@ type ImageWithTimeoutProps = {
 
 const getDefaultImage = (classes: string) => {
     switch (classes.toLowerCase()) {
-      case "dog":
-        return "/dog1.jpg"; 
-      case "cat":
-        return "/cat1.jpg"; 
-      case "frog":
-        return "/frog1.jpg";
+      case "laptop":
+        return "/labtop.jpeg"; 
+      case "keyboard":
+        return "/meachincal_keyboard.jpg"; 
+      case "phone":
+        return "/smartphone.webp";
       default:
-        return "/dog1.jpg"; 
+        return "/labtop.jpeg"; 
     }
   };
 
