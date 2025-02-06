@@ -25,11 +25,11 @@ func ConnectDatabase() {
 	port := os.Getenv("DB_PORT")
 
 	// For local
-	dsn := fmt.Sprintf("host=localhost user=%s password=%s dbname=%s port=%s sslmode=disable",
-					   user, password, dbname, port)
-	// For docker
-	// dsn := fmt.Sprintf("host=postgres user=%s password=%s dbname=%s port=%s sslmode=disable",
+	// dsn := fmt.Sprintf("host=localhost user=%s password=%s dbname=%s port=%s sslmode=disable",
 	// 				   user, password, dbname, port)
+	// For docker
+	dsn := fmt.Sprintf("host=postgres user=%s password=%s dbname=%s port=%s sslmode=disable",
+					   user, password, dbname, port)
 
 	DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {

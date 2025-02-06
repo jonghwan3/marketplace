@@ -7,7 +7,7 @@ You should run docker before the following command
 ```
 docker-compose up --build
 ```
-The above command will run entire system using `Docker-Compose` including Frontend (`React` + `Typescript`), Backend (`Golang`), and Database (`PostgreSQL`) with `GraphQL` protocol.
+The above command will run entire system using `Docker-Compose` including Frontend (`React` + `Typescript`), Backend (`Golang`, `Python`), and Database (`PostgreSQL`) with `GraphQL` protocol.
 
 You can see `Listening and serving HTTP on :8080`, when it succeeds.
 
