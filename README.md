@@ -1,4 +1,4 @@
-
+#### This web application facilitates buying and selling items, similar to Facebook Marketplace, with a key feature that uses image recognition to automatically generate item specifications, making it easier for sellers to create listings
 
 
 https://github.com/user-attachments/assets/42857ea4-6ecd-400d-8874-ba6f6a62f7d6
